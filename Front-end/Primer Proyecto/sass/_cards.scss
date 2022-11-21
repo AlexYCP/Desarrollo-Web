@@ -1,0 +1,42 @@
+/*Cards*/
+
+@use "colors";
+
+.tarjeta {
+    background-color: colors.$color-de-tarjeta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    border-radius: 7px;
+    height: 17.5rem;
+    width: 23rem;
+    div {
+        background-color: white;
+        border-radius: 5px;
+        padding: 0rem 0.7rem;
+        height: 2.2rem;
+        h5 {
+            color: colors.$color-de-tarjeta;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+    }
+    p {
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0;
+        width: 18rem;
+    }
+    a {
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}

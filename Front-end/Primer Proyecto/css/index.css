@@ -1,0 +1,835 @@
+@charset "UTF-8";
+/*Colors*/
+/*color principal*/
+/*color de tarjeta*/
+/*Buttons*/
+/*botón base blanco*/
+/*botón base azul*/
+/*botón transparente*/
+/*botón mediano*/
+/*botón grande*/
+/*hover, opacity*/
+/*botón transparente pequeño*/
+.b-t-p {
+  background-color: rgb(74, 74, 235);
+  color: white;
+  border-radius: 26px;
+  border-style: none;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border: 3px solid white;
+  height: 2.7rem;
+  width: 4.8rem;
+}
+.b-t-p:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/*botón transparente mediano*/
+.b-t-m {
+  background-color: rgb(74, 74, 235);
+  color: white;
+  border-radius: 26px;
+  border-style: none;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border: 3px solid white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  height: 2.7rem;
+  width: 8rem;
+}
+.b-t-m:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/*botón blanco mediano*/
+.b-b-m {
+  background-color: white;
+  color: rgb(74, 74, 235);
+  border-radius: 26px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  height: 2.7rem;
+  width: 8rem;
+  border-style: none;
+}
+.b-b-m:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/*botón blanco grande uno*/
+.b-b-g-1 {
+  background-color: white;
+  color: rgb(74, 74, 235);
+  border-radius: 26px;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 3.2rem;
+  width: 9.3rem;
+  border: 3px solid rgb(74, 74, 235);
+}
+.b-b-g-1:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/*botón blanco grande dos*/
+.b-b-g-2 {
+  background-color: white;
+  color: rgb(74, 74, 235);
+  border-radius: 26px;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 3.2rem;
+  width: 9.3rem;
+}
+.b-b-g-2:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/*botón azul grande*/
+.b-a-g {
+  background-color: rgb(74, 74, 235);
+  color: white;
+  border-radius: 26px;
+  border-style: none;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 3.2rem;
+  width: 9.3rem;
+}
+.b-a-g:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/*botón azul extra grande*/
+.b-a-eg {
+  background-color: rgb(74, 74, 235);
+  color: white;
+  border-radius: 26px;
+  border-style: none;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 3rem;
+  width: 13.5rem;
+}
+.b-a-eg:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/*Cards*/
+.tarjeta {
+  background-color: rgb(43, 43, 117);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  border-radius: 7px;
+  height: 17.5rem;
+  width: 23rem;
+}
+.tarjeta div {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0rem 0.7rem;
+  height: 2.2rem;
+}
+.tarjeta div h5 {
+  color: rgb(43, 43, 117);
+  font-size: 1.8rem;
+  margin: 0;
+}
+.tarjeta p {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  width: 18rem;
+}
+.tarjeta a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.tarjeta a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/*Globals*/
+/*características del título*/
+body {
+  font-size: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: rgb(74, 74, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  height: 6.2rem;
+  width: 100%;
+}
+nav .logotipo a {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+nav .logotipo a:hover {
+  cursor: pointer;
+}
+nav .enlaces ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+nav .enlaces ul li {
+  font-size: 0.9rem;
+  font-weight: 700;
+  list-style: none;
+}
+nav .enlaces ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav .enlaces ul li a:hover {
+  text-decoration: underline;
+}
+nav .cuenta {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.s-uno {
+  display: flex;
+  height: 47rem;
+  width: 100%;
+}
+.s-uno .d-izquierda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+  padding-left: 6.5rem;
+  height: 100%;
+  width: 50%;
+}
+.s-uno .d-izquierda h1 {
+  font-size: 4.6rem;
+  margin: 0;
+}
+.s-uno .d-izquierda div {
+  width: 30rem;
+}
+.s-uno .d-izquierda div p {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.s-uno .d-izquierda div p span {
+  font-weight: 700;
+}
+.s-uno .d-izquierda div button {
+  font-size: 1rem;
+}
+.s-uno .d-derecha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  height: 100%;
+  width: 50%;
+}
+.s-uno .d-derecha video {
+  height: 36.5rem;
+}
+
+.s-dos {
+  padding-top: 5rem;
+  height: 55rem;
+  width: 100%;
+}
+.s-dos h2 {
+  color: rgb(74, 74, 235);
+  font-size: 2.7rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.s-dos .d-arriba {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 6rem;
+  width: 100%;
+}
+.s-dos .d-arriba div span {
+  color: rgb(74, 74, 235);
+  font-size: 3.4rem;
+  font-weight: 500;
+}
+.s-dos .d-arriba p {
+  font-weight: 600;
+  margin: 0;
+}
+.s-dos .d-abajo {
+  display: flex;
+  width: 100%;
+}
+.s-dos .d-abajo .pt {
+  width: 55%;
+}
+.s-dos .d-abajo .pt img {
+  padding-left: 2rem;
+  width: 37rem;
+}
+.s-dos .d-abajo .bc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 2rem;
+  width: 45%;
+}
+.s-dos .d-abajo .bc p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0;
+}
+.s-dos .d-abajo .bc h3 {
+  color: rgb(74, 74, 235);
+  font-size: 2.7rem;
+  margin: 0;
+}
+.s-dos .d-abajo .bc ul {
+  padding: 0;
+}
+.s-dos .d-abajo .bc ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  list-style: none;
+}
+.s-dos .d-abajo .bc ul li i {
+  color: rgb(74, 74, 235);
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.s-tres {
+  padding-top: 5rem;
+  height: 43.7rem;
+  width: 100%;
+}
+.s-tres h2 {
+  color: rgb(74, 74, 235);
+  font-size: 2.7rem;
+  text-align: center;
+  margin-bottom: 2.7rem;
+}
+.s-tres div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.s-tres div img {
+  width: 50rem;
+  margin-bottom: 3rem;
+}
+
+.s-cuatro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 43rem;
+  width: 100%;
+}
+.s-cuatro h2 {
+  color: rgb(74, 74, 235);
+  font-size: 2.7rem;
+  text-align: center;
+  margin: 0;
+}
+.s-cuatro .d-unica {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.s-cuatro .d-unica div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 24rem;
+  width: 18rem;
+}
+.s-cuatro .d-unica div i {
+  font-size: 10rem;
+}
+.s-cuatro .d-unica div h5 {
+  font-size: 2rem;
+  color: rgb(74, 74, 235);
+}
+.s-cuatro .d-unica div p {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+.s-cuatro .d-unica div p span {
+  color: rgb(74, 74, 235);
+  font-weight: 600;
+}
+
+.s-cinco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 94rem;
+  width: 100%;
+}
+.s-cinco span {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.s-cinco h2 {
+  color: rgb(74, 74, 235);
+  font-size: 2.7rem;
+  text-align: center;
+  margin: 1.2rem 0rem;
+}
+.s-cinco p {
+  margin: 0;
+}
+
+.s-seis {
+  background-color: rgb(43, 43, 117);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 86rem;
+  width: 100%;
+}
+.s-seis .d-arriba {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  height: 58.5rem;
+  width: 100%;
+}
+.s-seis .d-arriba span {
+  font-size: 1.2rem;
+}
+.s-seis .d-arriba h2 {
+  font-size: 2.8rem;
+  margin: 0;
+  width: 39rem;
+}
+.s-seis .d-arriba img {
+  width: 70rem;
+}
+.s-seis .d-abajo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 4rem;
+  height: 14rem;
+  width: 100%;
+}
+.s-seis .d-abajo div {
+  text-align: center;
+  height: 10rem;
+  width: 18rem;
+}
+.s-seis .d-abajo div i {
+  font-size: 2.5rem;
+}
+.s-seis .d-abajo div h5 {
+  font-size: 2rem;
+  margin: 0;
+}
+.s-seis .d-abajo div p {
+  text-align: center;
+  margin: 0;
+}
+
+.s-siete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 110rem;
+  width: 100%;
+}
+.s-siete .d-arriba {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  height: 42rem;
+  width: 100%;
+}
+.s-siete .d-abajo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.6rem;
+  width: 100%;
+}
+.s-siete .d-abajo h2 {
+  color: rgb(74, 74, 235);
+  font-size: 2.7rem;
+  text-align: center;
+  margin: 0;
+}
+.s-siete .d-abajo h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 0;
+  width: 85%;
+}
+.s-siete .d-abajo h3 span {
+  font-weight: 500;
+}
+.s-siete .d-abajo img {
+  height: 28rem;
+}
+.s-siete .d-abajo p {
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+footer {
+  background-color: rgb(74, 74, 235);
+  color: white;
+  padding-top: 4rem;
+  height: 51rem;
+  width: 100%;
+}
+footer .d-arriba {
+  display: flex;
+  justify-content: space-around;
+}
+footer .d-arriba .d-uno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 14.5rem;
+  width: 11rem;
+}
+footer .d-arriba .d-uno h5 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+footer .d-arriba .d-dos, footer .d-arriba .d-tres, footer .d-arriba .d-cuatro {
+  height: 30rem;
+  width: 9rem;
+}
+footer .d-arriba .d-dos h5, footer .d-arriba .d-tres h5, footer .d-arriba .d-cuatro h5 {
+  color: rgb(167, 162, 162);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+footer .d-arriba .d-dos a, footer .d-arriba .d-tres a, footer .d-arriba .d-cuatro a {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+footer .d-arriba .d-dos a:hover, footer .d-arriba .d-tres a:hover, footer .d-arriba .d-cuatro a:hover {
+  color: rgb(167, 162, 162);
+  text-decoration: underline;
+}
+footer .d-abajo {
+  height: 14rem;
+  width: 100%;
+}
+footer .d-abajo .d-uno {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 0rem;
+  height: 3.4rem;
+  width: 100%;
+}
+footer .d-abajo .d-uno span {
+  font-size: 2rem;
+}
+footer .d-abajo .d-uno .p-uno {
+  font-size: 0.7rem;
+}
+footer .d-abajo .d-uno .p-uno a {
+  color: white;
+  font-size: 0.7rem;
+}
+footer .d-abajo .d-uno .p-dos {
+  font-size: 0.7rem;
+}
+footer .d-abajo .d-uno .p-dos a {
+  color: white;
+  font-size: 0.7rem;
+}
+footer .d-abajo .d-uno div {
+  display: flex;
+  justify-content: space-around;
+  width: 14rem;
+}
+footer .d-abajo .d-uno div a {
+  color: white;
+}
+footer .d-abajo .d-uno div a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+footer .d-abajo .d-uno div a i {
+  font-size: 2rem;
+}
+footer .d-abajo .d-dos {
+  width: 100%;
+}
+footer .d-abajo .d-dos p {
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0rem 4.5rem;
+}
+
+/*Responsive design*/
+/*centrar*/
+@media (max-width: 768px) {
+  nav {
+    gap: 1.5rem;
+  }
+  .s-uno {
+    height: 45rem;
+  }
+  .s-uno .d-izquierda {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+  .s-uno .d-izquierda h1 {
+    text-align: center;
+    font-size: 4rem;
+    width: 14rem;
+  }
+  .s-uno .d-izquierda div {
+    width: 14rem;
+  }
+  .s-uno .d-izquierda div p {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .s-uno .d-derecha {
+    display: none;
+  }
+  .s-dos {
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    height: 76.4rem;
+  }
+  .s-dos .d-arriba {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 3.4rem;
+    width: 100%;
+  }
+  .s-dos .d-arriba div {
+    text-align: center;
+  }
+  .s-dos .d-abajo {
+    justify-content: center;
+    align-items: center;
+  }
+  .s-dos .d-abajo .bc {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    width: 16rem;
+  }
+  .s-dos .d-abajo .bc h3 {
+    text-align: center;
+  }
+  .s-tres {
+    padding-top: 3rem;
+    height: 18.5rem;
+  }
+  .s-cuatro {
+    height: 62.7rem;
+  }
+  .s-cuatro .d-unica {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .s-cuatro .d-unica div {
+    height: 14rem;
+  }
+  .s-cuatro .d-unica div i {
+    font-size: 5rem;
+  }
+  .s-cinco {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.9rem;
+    height: 24rem;
+  }
+  .s-cinco h2 {
+    margin: 0;
+  }
+  .s-cinco p {
+    text-align: center;
+  }
+  .s-seis {
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.3rem;
+    padding-bottom: 2.4rem;
+    height: 70rem;
+  }
+  .s-seis .d-arriba {
+    height: 14rem;
+  }
+  .s-seis .d-arriba h2 {
+    font-size: 2.1rem;
+    width: 19.5rem;
+  }
+  .s-seis .d-abajo {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-top: 2.4rem;
+    height: 45rem;
+  }
+  .s-seis .d-abajo div {
+    height: 10.5rem;
+    width: 20rem;
+  }
+  .s-seis button {
+    margin-top: 1rem;
+  }
+  .s-siete {
+    height: 98rem;
+    width: 100%;
+  }
+  .s-siete .d-arriba {
+    gap: 0;
+    height: 50.5rem;
+  }
+  .s-siete .d-arriba .tarjeta {
+    height: 14.5rem;
+    width: 18.5rem;
+  }
+  .s-siete .d-arriba .tarjeta div {
+    height: 1.7rem;
+  }
+  .s-siete .d-arriba .tarjeta div h5 {
+    font-size: 1.4rem;
+  }
+  .s-siete .d-arriba .tarjeta p {
+    width: 15.6rem;
+  }
+  .s-siete .d-abajo {
+    margin: 0;
+    padding-bottom: 0.7rem;
+  }
+  .s-siete .d-abajo h2 {
+    font-size: 2.2rem;
+  }
+  .s-siete .d-abajo h3 {
+    font-size: 1.8rem;
+  }
+  .s-siete .d-abajo p {
+    font-size: 0.7rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    height: 88.7rem;
+    width: 100%;
+  }
+  footer .d-arriba {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  footer .d-arriba .d-uno {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  footer .d-arriba .d-uno h5 {
+    text-align: center;
+    width: 75%;
+  }
+  footer .d-arriba .d-cuatro {
+    text-align: center;
+    height: 16rem;
+    width: 100%;
+  }
+  footer .d-abajo {
+    height: 22rem;
+  }
+  footer .d-abajo .d-uno {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0rem;
+    height: 8.4rem;
+  }
+  footer .d-abajo .d-uno .p-uno {
+    margin: 0;
+  }
+  footer .d-abajo .d-uno .p-dos {
+    margin: 0;
+  }
+  footer .d-abajo .d-uno div {
+    width: 12rem;
+  }
+  footer .d-abajo .d-dos {
+    width: 100%;
+  }
+  footer .d-abajo .d-dos p {
+    padding: 0rem 1rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,106 @@
+/*Buttons*/
+
+@use "colors";
+
+/*botón base blanco*/
+@mixin b-b-b {
+    background-color: white;
+    color: colors.$color-principal;
+    border-radius: 26px;
+}
+
+/*botón base azul*/
+@mixin b-b-a {
+    background-color: colors.$color-principal;
+    color: white;
+    border-radius: 26px;
+    border-style: none;
+}
+
+/*botón transparente*/
+@mixin b-t {
+    font-size: 0.7rem;
+    font-weight: 700;
+    border: 3px solid white;
+}
+
+/*botón mediano*/
+@mixin b-m {
+    font-size: 0.7rem;
+    font-weight: 700;
+    height: 2.7rem;
+    width: 8rem;
+}
+
+/*botón grande*/
+@mixin b-g {
+    font-size: 1rem;
+    font-weight: 500;
+    height: 3.2rem;
+    width: 9.3rem;
+}
+
+/*hover, opacity*/
+@mixin b-h {
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+/*botón transparente pequeño*/
+.b-t-p {
+    @include b-b-a();
+    @include b-t();
+    @include b-h();
+    height: 2.7rem;
+    width: 4.8rem;
+}
+
+/*botón transparente mediano*/
+.b-t-m {
+    @include b-b-a();
+    @include b-t();
+    @include b-m();
+    @include b-h();
+}
+
+/*botón blanco mediano*/
+.b-b-m {
+    @include b-b-b();
+    @include b-m();
+    @include b-h();
+    border-style: none;
+}
+
+/*botón blanco grande uno*/
+.b-b-g-1 {
+    @include b-b-b();
+    @include b-g();
+    @include b-h();
+    border: 3px solid colors.$color-principal;
+}
+
+/*botón blanco grande dos*/
+.b-b-g-2 {
+    @include b-b-b();
+    @include b-g();
+    @include b-h();
+}
+
+/*botón azul grande*/
+.b-a-g {
+    @include b-b-a();
+    @include b-g();
+    @include b-h();
+}
+
+/*botón azul extra grande*/
+.b-a-eg {
+    @include b-b-a();
+    @include b-h();
+    font-size: 1rem;
+    font-weight: 500;
+    height: 3rem;
+    width: 13.5rem;
+}
